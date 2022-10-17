@@ -1,0 +1,12 @@
+@import '../../theme/var.scss';
+
+ion-content{ 
+    --ion-background-color: rgb(27,188,178);
+    --ion-background-color: linear-gradient(90deg, rgba(27,188,178,1) 0%, rgba(25,140,155,1) 100%);
+    div {
+        height:100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
