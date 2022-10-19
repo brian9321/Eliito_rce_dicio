@@ -74,6 +74,16 @@ http://ionicframework.com/docs/theming/ */
   --ion-color-light-contrast-rgb: 0, 0, 0;
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
+
+  /** eliiot **/
+	--ion-color-eliiot: #198C9B;
+	--ion-color-eliiot-rgb: 25,140,155;
+	--ion-color-eliiot-contrast: #ffffff;
+	--ion-color-eliiot-contrast-rgb: 255,255,255;
+	--ion-color-eliiot-shade: #167b88;
+	--ion-color-eliiot-tint: #3098a5;
+  --ion-color-eliiot-home: linear-gradient(90deg, rgba(27,188,178,1) 0%, rgba(25,140,155,1) 100%);
+  --ion-color-eliiot-background: #F6F7F8;
 }
 
 @media (prefers-color-scheme: dark) {

@@ -1,0 +1,45 @@
+.start {
+    height: 100vh;
+    form {
+        div:nth-child(1){
+            padding-top: 30px;
+            ion-img {
+                margin: 0px 0px 20px 0px;
+            }
+            h2 {
+                width: 90%;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.first-phone {
+    width: calc(100% - 120px);
+}
+
+.phone-icn {
+    position: absolute;
+    margin: 0px 0px 0px 25px !important;
+    justify-self: flex-start;
+    align-self: flex-start;
+}
+
+.start-input-group {
+    margin: auto;
+    width: 100%;
+}
+
+.start-input-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+ion-label {
+    text-align: center;
+    b{
+        color: #198C9B;
+    }
+}

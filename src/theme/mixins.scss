@@ -1,0 +1,76 @@
+@import "variables.scss";
+@import "placeholder.scss";
+
+/* Prefix */
+@mixin displayFlex($alignitems, $justify, $direction){
+    @extend %displayFlex;
+    -webkit-justify-content: $justify;
+    justify-content: $justify;
+    -webkit-flex-direction: $direction;
+    flex-direction: $direction;
+    -webkit-align-items: $alignitems;
+    align-items: $alignitems;
+}
+// Valores de $justify: center, flex-start, space-around, space-between, flex-end
+// Valores de $direction: column, row
+// Valores de $direction: wrap, nowrap
+
+@mixin flexWrap($wrap){
+    -webkit-flex-wrap: $wrap;
+    flex-wrap: $wrap;
+}
+
+// Esto aplica para  display grid
+@mixin alignSelf($align-items) {
+    -webkit-align-self: $align-items;
+    align-self: $align-items;
+}
+
+// Esto aplica para  display flex
+@mixin alignItems($align-items) {
+    -webkit-align-items: $align-items;
+    align-items: $align-items;
+}
+
+/* Transitions */
+@mixin transitionEffect($time) {
+    -webkit-transition: all $time;
+    transition: all $time;
+}
+
+@mixin border-radius($radius){
+    border-radius: $radius;	
+    -moz-border-radius: $radius;
+    -webkit-border-radius: $radius;
+}
+
+@mixin transition-duration($duration){
+    transition-duration: $duration;
+    -webkit-transition-duration: $duration;
+    -moz-transition-duration: $duration;
+    -o-transition-duration: $duration;
+}
+
+@mixin transitionAll($transition) {
+    transition: $transition;
+    -webkit-transition: $transition;
+    -moz-transition: $transition;
+    -o-transition: $transition;
+}
+// valores para $transition: all 0.3s ease, all 0.25s linear 
+
+@mixin transition-timing {
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+    transition: transform 0.3s, opacity 0.3s;
+    -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 4);
+    transition-timing-function: cubic-bezier(0.2, 1, 0.3, 4);
+}
+
+@mixin button($color, $text-color){
+    background: $color;
+    color: $text-color;
+    border: 0;
+    box-sizing: border-box;
+    height: 40px;
+    @include border-radius(30px);
+}
